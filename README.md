@@ -1,60 +1,17 @@
 <p align="justify">
-  <b>Perumahan App</b> adalah Sebuah aplikasi web interaktif administrasi perumahan berbasis Laravel, React JS, dan MySQL. Aplikasi ini digunakan untuk mengelola data penghuni, rumah, pembayaran iuran, serta laporan pemasukan dan pengeluaran.
+  <h2><b>Perumahan App</b></h2> Sebuah aplikasi web interaktif administrasi perumahan berbasis Laravel, React JS, dan MySQL. Aplikasi ini digunakan untuk mengelola data penghuni, rumah, riwayat hunian, pembayaran iuran, serta laporan pemasukan dan pengeluaran.
 </p>
 
 <h2><b>Fitur Utama</b></h2>
 
-<b>1. Dashboard</b>
-* Total Rumah
-* Total Dihuni Tetap
-* Total Dihuni Kontrak
-* Total Rumah Kosong
-  
-<b>2. Penghuni</b>
-* Menambahkan data penghuni
-* Mengubah / Mengedit data penghuni
-* Mengunggah foto KTP melalui fitur upload file
-* Status penghuni (Kontrak / Tetap)
-* Nomor telepon harus diawal dengan kode negara Indonesia (62)
-* Status pernikahan (Menikah / Belum Menikah)
+* Dashboard
+* Manajemen penghuni dan rumah
+* Penghuni rumah (riwayat hunian
+* Pembayaran iuran
+* Laporan keuangan
 
-<b>3. Rumah</b>
-* Menambahkan data rumah
-* Mengedit data rumah
-* Menampilkan status rumah (Dihuni / Tidak Dihuni)
-* Menampilkan informasi penghuni aktif pada setiap rumah
+<h2><b>Teknologi yang Digunakan</b></h2>
 
-<b>4. Penghuni Rumah</b>
-* Menambahkan penghuni ke rumah tertentu.
-* Mengubah data penghuni rumah.
-* Menyimpan riwayat penghuni pada setiap rumah.
-* Menampilkan histori penghuni yang pernah menempati rumah tertentu.
-* Menampilkan tanggal mulai dan tanggal selesai masa huni penghuni.
-
-<b>5. Pembayaran</b>
-* Menambahkan data pembayaran penghuni.
-* Mengelola pembayaran iuran kebersihan.
-* Mengelola pembayaran iuran satpam.
-* Menentukan status pembayaran (Lunas atau Belum Lunas).
-* Menyimpan riwayat pembayaran penghuni.
-* Mendukung pembayaran bulanan maupun pembayaran untuk beberapa periode sekaligus.
-
-<b>6. Pengeluaran</b>
-* Menambahkan data pengeluaran.
-* Mengubah data pengeluaran.
-* Menyimpan informasi tanggal pengeluaran.
-* Menyimpan nominal pengeluaran.
-* Menyimpan keterangan atau deskripsi pengeluaran.
-
-<b>7. Laporan</b>
-* Menampilkan grafik pemasukan dan pengeluaran selama 1 tahun.
-* Menampilkan total pemasukan bulanan.
-* Menampilkan total pengeluaran bulanan.
-* Menampilkan saldo bulanan.
-* Menampilkan detail pemasukan dan pengeluaran berdasarkan bulan yang dipilih.
-* Menampilkan ringkasan kondisi keuangan perumahan.
-  
-**Teknologi yang Digunakan:**
 | Bagian | Teknologi |
 |---------|---------|
 | Backend | Laravel (PHP) |
@@ -186,3 +143,15 @@ perumahan-app/
 ├── README.md
 └── vite.config.js
 ```
+
+<h2><b>Catatan Penggunaan Terminal</b></h2>
+<h3><b>Backend (Laravel)</b></h3>
+<p align="justify">
+Untuk menjalankan backend Laravel, disarankan menggunakan <b>Terminal Laragon</b> atau terminal yang sudah terhubung dengan PHP & Composer.
+</p>
+
+* Hal ini karena backend membutuhkan: <b>PHP</b>, <b>Composer</b>, <b>MySQL.</b>
+
+* Jika di CMD biasa muncul error seperti: ```composer is not recognized```
+
+* maka itu berarti Composer belum terdeteksi di sistem PATH.
