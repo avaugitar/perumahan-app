@@ -21,6 +21,8 @@
 
 <b>1. Clone Repository</b>
 
+   Buka terminal (disarankan Laragon Terminal) yang sudah terhubung dengan PHP, Composer, dan MySQL.
+   
    ```
    git clone https://github.com/avaugitar/perumahan-app.git
    ```
@@ -74,16 +76,44 @@
    ```
    php artisan migrate
    ```
-   
+
+   <b>Manual Tinker</b>
+   ```
+   php artisan tinker
+   ```
+
+Lalu tambahkan data berikut:
+
+1)    ```
+      'name' => 'Sampah',
+
+      'amount' => 15000,
+
+      'description' => 'Iuran Kebersihan',
+
+      'is_active' => 1, 
+    
+      ]);
+2)  ```
+    'name' => 'Satpam',
+
+    'amount' => 100000,
+
+    'description' => 'Iuran keamanan',
+
+    'is_active' => 1,
+    
+    ]);
    <b>Jalankan backend:</b>
    ```
    php artisan serve
    ```
    
    <b>Backend berjalan pada:</b>
-    ```
-    http://127.0.0.1:8000
-    ```
+
+   ```
+   http://127.0.0.1:8000
+   ```
 
 <b>3. Instalasi Frontend</b>
 
@@ -110,42 +140,7 @@
 
 ```
 perumahan-app/
-├── backend/
-├── app/
-├── bootstrap/
-├── config/
-├── database/
-├── public/
-├── resources/
-├── routes/
-├── storage/
-├── tests/
-├── .editorconfig
-├── .env.example
-├── .gitattributes
-├── .gitignore
-├── artisan
-├── composer.json
-├── composer.lock
-├── package.json
-├── phpunit.xml
-├── vite.config.js
+├── backend/   (Laravel API)
+├── frontend/  (React JS)
 └── README.md
-│
-├── frontend/
-├── public/
-├── src/
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json/
-├── package.json
-├── README.md
-└── vite.config.js
 ```
-
-<h2><b>❗️Catatan Penggunaan Terminal</b></h2>
-
-* Backend membutuhkan: <b>PHP</b> + <b>Composer</b> + <b>MySQL</b>
-* Disarankan menggunakan Terminal Laragon
-* Jika error ```composer is not recognized```, berarti Composer belum terinstall atau belum masuk PATH
