@@ -92,7 +92,7 @@
 
    **Buat database MySQL dengan nama:**
    ```
-   perumahan-db
+   perumahan_db
    ```
    
    **Konfigurasi database pada file .env:**
@@ -100,7 +100,7 @@
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=perumahan-db
+   DB_DATABASE=perumahan_db
    DB_USERNAME=root
    DB_PASSWORD=
    ```
@@ -190,6 +190,6 @@ perumahan-app/
 
 **Menjalankan Aplikasi**
 1. Jalankan Apache dan MYSQL melalui Laragon.
-2. Buat database dengan nama perumahan-db.
+2. Buat database dengan nama perumahan_db.
 3. Jalankan backend menggunakan ```php artisan serve```
 4. Jalankan frontend menggunakan ```npm run dev```
