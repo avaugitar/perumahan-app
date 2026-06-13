@@ -87,11 +87,11 @@
 1)    ```
       \App\Models\FeeType::create([
       
-      'name' => 'Sampah',
+      'name' => 'Kebersihan',
 
       'amount' => 15000,
 
-      'description' => 'Iuran Kebersihan',
+      'description' => 'Iuran Sampah',
 
       'is_active' => 1, 
     
