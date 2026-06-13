@@ -82,9 +82,11 @@
    php artisan tinker
    ```
 
-Lalu tambahkan data berikut:
+   Lalu tambahkan data berikut:
 
 1)    ```
+      \App\Models\FeeType::create([
+      
       'name' => 'Sampah',
 
       'amount' => 15000,
@@ -95,6 +97,8 @@ Lalu tambahkan data berikut:
     
       ]);
 2)  ```
+    \App\Models\FeeType::create([
+    
     'name' => 'Satpam',
 
     'amount' => 100000,
@@ -104,6 +108,12 @@ Lalu tambahkan data berikut:
     'is_active' => 1,
     
     ]);
+
+   <b>Keluar dari Tinker</b> 
+   ```
+   Exit
+   ```
+    
    <b>Jalankan backend:</b>
    ```
    php artisan serve
