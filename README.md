@@ -55,7 +55,6 @@
 * Menampilkan ringkasan kondisi keuangan perumahan.
   
 **Teknologi yang Digunakan:**
-
 | Bagian | Teknologi |
 |---------|---------|
 | Backend | Laravel (PHP) |
@@ -187,9 +186,3 @@ perumahan-app/
 ├── README.md
 └── vite.config.js
 ```
-
-**Menjalankan Aplikasi**
-1. Jalankan Apache dan MYSQL melalui Laragon.
-2. Buat database dengan nama perumahan_db.
-3. Jalankan backend menggunakan ```php artisan serve```
-4. Jalankan frontend menggunakan ```npm run dev```
